@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <style>
+       /* Estilo para la sección de presentación */
+.presentation {
+    background-image: url('https://e0.pxfuel.com/wallpapers/857/100/desktop-wallpaper-animated-active-moving-moving-galaxy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative; 
+}
+
+#nombre {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    font-size: 29px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; 
+}
+
+/* Definir la animación */
+@keyframes fadeIn {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <div id="nombre">Abel Quispe Maqque</div>
+        <div class="container">
+            <!-- Tu contenido actual -->
+            <!-- ... -->
+        </div>
+    </div>
+</body>
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Presentación</title>
+    <style>
+        /* Estilo para la sección de presentación */
+        .presentation {
+            background-image: url('https://e0.pxfuel.com/wallpapers/857/100/desktop-wallpaper-animated-active-moving-moving-galaxy.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 4px solid #007BFF;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        /* Estilo del nuevo botón */
+        .my-btn {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 1em;
+            color: rgb(118, 109, 244);
+            border: 2px solid rgb(118, 109, 244);
+            position: relative;
+            transition: .5s;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .my-btn::before,
+        .my-btn::after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: inherit;
+            transition: 0.5s;
+        }
+
+        .my-btn::before{
+            top: -10px;
+            left:-10px;
+            border-width:2px 0 0 2px;
+        }
+
+        .my-btn::after{
+            bottom: -10px;
+            right: -10px;
+            border-width: 0 2px 2px 0;
+        }
+
+        .my-btn:hover::before,
+        .my-btn:hover::after{
+            width: calc(100% + 10px);
+            height: calc(100% + 18px);
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <div class="container">
+            <h1>Mi Página de Presentación</h1>
+
+            <img src="https://img.freepik.com/vector-premium/ilustracion-avatar-estudiante-icono-perfil-usuario-avatar-jovenes_118339-4402.jpg?w=740" alt="Mi Fotografía" class="avatar">
+
+            <h2>Presentación Personal</h2>  
+            <p>Hola, soy [Abel]. Bienvenido a mi página personal.</p>
+
+            <h2>Sobre Mí</h2>
+            <ul>
+                <li>Me apasiona [Mi pasión es jugar fútbol y aprender nuevas cosas].</li>
+                <li>En mi tiempo libre, disfruto [Salir, jugar videojuegos y dibujar].</li>
+                <li>Algunos de mis gustos incluyen [Ver anime y jugar].</li>
+            </ul>
+
+            <h2>Tecnologías y Lenguajes de Programación</h2>
+            <p>Me especializo en [El desarrollo de códigos en Python y JavaScript].</p>
+            <p>Me especializo en [El desarrollo de códigos en Python y JavaScript].</p>
+
+<div class="logos">
+    <img src="https://infopvirtual.com/wp-content/uploads/2021/04/Python.jpg" alt="Logo Python">
+    <img src="https://blog.interfell.com/hubfs/JavaScript%20un%20lenguaje%20de%20programaci%C3%B3n.jpg" alt="Logo Java">
+</div>
+
+<style>
+    /* Resto de tus estilos CSS existentes */
+
+    .logos img {
+        width: 130px; /* Ajusta el ancho según tu preferencia */
+        height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+        margin-right: 50px; /* Espacio entre las imágenes */
+    }
+</style>
+
+            <h2>Formación Profesional</h2>
+            <p>Soy un estudiante de 3er ciclo en el instituto [Tecsup].</p>
+
+            <h2>Idiomas</h2>
+            <p>Hablo [Español con fluidez, inglés básico y portugués solo un poco].</p>
+
+            <!-- Nuevo botón con función onclick -->
+            <a href="#" class="my-btn" onclick="mostrarInformacion()">Mas Información</a>
+
+            <!-- JavaScript para abrir una nueva ventana con correo y número -->
+            <script>
+                function mostrarInformacion() {
+                    // Definir la información de contacto
+                    var Nombre = "Abel Quispe Maqque";
+                    var correo = "abel.quispe.m@tecsup.edu.pe";
+                    var telefono = "934761608";
+                    var DNI = "73535104";
+                    
+
+                    // Crear el contenido de la nueva ventana
+                    var contenidoVentana = `
+                        <h2>Información de Contacto</h2>
+                        <p>Nombre : ${Nombre}</p>
+                        <p>Correo Electrónico: ${correo}</p>
+                        <p>Número de Teléfono: ${telefono}</p>
+                        <p>DNI: ${DNI}</p>
+                    `;
+
+                    // Abrir una nueva ventana
+                    var ventana = window.open("", "_blank", "width=400,height=200");
+                    ventana.document.open();
+                    ventana.document.write(contenidoVentana);
+                    ventana.document.close();
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
